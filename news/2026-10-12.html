@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="color-scheme" content="light dark">
+<title>新闻存档 · 2026-10-12</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<a class="back" href="index.html">&#8249; 存档索引</a>
+<header class="top">
+<div class="day">2026年10月12日 周一</div>
+<h1>&#128240; 新闻存档</h1>
+<div class="sub">加红 1 条（全文）&nbsp;·&nbsp;全部 17 条</div>
+</header>
+<div class="arcbar">
+<button id="f-all" class="on" type="button">全部 17</button>
+<button id="f-red" type="button">只看加红 1</button>
+<button id="f-open" type="button">展开全文</button>
+</div>
+<div id="list">
+<details class="arc red" data-cat="red"><summary><span class="t">23:52</span><span class="lv">加红</span><span class="h">盘后A股上市公司重点业绩公告精选</span></summary><div class="body"><p>财联社10月10日电，据财联社不完全统计，截至发稿，盘后包括联讯仪器、源杰科技、北方稀土、翰宇药业、超声电子、奥来德、坤彩科技、粤桂股份、全志科技、神火股份、新宙邦、纳微科技、优博讯、捷捷微电、冰轮环境、国机精工在内的多家A股上市公司发布2026年前三季度/第三季度业绩预告。其中，联讯仪器公告，前三季度净利润同比预增1866%-2073%。源杰科技公告，第三季度净利润同比预增579%-660%。</p></div></details><div class="arc" data-cat="all"><span class="t">23:51</span><span class="h plain">欧元兑美元汇率触及2025年5月以来的最低水平，最新下跌0.38%，报1.1159。</span></div><div class="arc" data-cat="all"><span class="t">23:45</span><span class="h plain">LVMH第三季度营收为185亿欧元，预计为185亿欧元。</span></div><div class="arc" data-cat="all"><span class="t">23:39</span><span class="h plain">胡塞武装称沙特空袭也门北部已致9死7伤</span></div><div class="arc" data-cat="all"><span class="t">23:38</span><span class="h plain">小鹏汽车董事长何小鹏表示，目标是到2030年底全球年销量达到100万辆，其中欧洲占一半。</span></div><div class="arc" data-cat="all"><span class="t">23:31</span><span class="h plain">欧洲主要股指集体收涨</span></div><div class="arc" data-cat="all"><span class="t">23:29</span><span class="h plain">图片库巨头Getty Images计划通过预打包的第11章破产程序实现私有化，重组目标是在年底前完成。</span></div><div class="arc" data-cat="all"><span class="t">23:23</span><span class="h plain">英国首相：拒绝深化对欧关系将是“重大失职”</span></div><div class="arc" data-cat="all"><span class="t">23:11</span><span class="h plain">原糖期货重拾涨势 交易员防范厄尔尼诺冲击</span></div><div class="arc" data-cat="all"><span class="t">23:08</span><span class="h plain">英伟达与思科推出新型可插拔光模块外形规格 以扩展AI工厂</span></div><div class="arc" data-cat="all"><span class="t">23:02</span><span class="h plain">低硫燃料油夜盘涨超6%</span></div><div class="arc" data-cat="all"><span class="t">23:00</span><span class="h plain">网传住酒店可参观“中国天眼”核心区 中国科学院：正核查</span></div><div class="arc" data-cat="all"><span class="t">22:52</span><span class="h plain">海底捞：向CEO张勇提供本金上限1亿元贷款融资 期限为30天</span></div><div class="arc" data-cat="all"><span class="t">22:36</span><span class="h plain">30只成分股中有22只上涨 道琼斯指数涨0.5%创3周新高</span></div><div class="arc" data-cat="all"><span class="t">22:35</span><span class="h plain">沙特利雅得国际机场将继续关闭至当地时间18日</span></div><div class="arc" data-cat="all"><span class="t">22:34</span><span class="h plain">托克与美国企业EnergyX签署10年锂产品承购协议 涉及10万吨电池级锂产品</span></div><div class="arc" data-cat="all"><span class="t">22:33</span><span class="h plain">欧洲理事会宣布，欧盟-英国峰会将于11月20日在布鲁塞尔举行。</span></div>
+</div>
+<script>
+(function(){
+  var list=document.getElementById('list');
+  function setFilter(mode){
+    document.getElementById('f-all').className = mode==='all'?'on':'';
+    document.getElementById('f-red').className = mode==='red'?'on':'';
+    Array.prototype.forEach.call(list.children,function(el){
+      el.style.display = (mode==='red' && el.dataset.cat!=='red') ? 'none' : '';
+    });
+  }
+  document.getElementById('f-all').onclick=function(){setFilter('all');};
+  document.getElementById('f-red').onclick=function(){setFilter('red');};
+  var open=false;
+  document.getElementById('f-open').onclick=function(){
+    open=!open; this.textContent = open?'收起全文':'展开全文';
+    Array.prototype.forEach.call(list.querySelectorAll('details'),function(d){d.open=open;});
+  };
+})();
+</script>
+<footer>数据来源：财联社电报 · 开盘啦<br>生成于 2026-10-13 22:33 ｜ <a href="archive/index.html">简报归档</a> ｜ <a href="news/index.html">新闻存档</a></footer>
+</body>
+</html>
