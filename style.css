@@ -319,3 +319,79 @@ footer {
   line-height: 1.9;
 }
 footer a { color: var(--text-2); text-decoration: underline; text-underline-offset: 2px; }
+
+/* ── 新闻存档（site/news/）── */
+.arcbar {
+  position: sticky;
+  top: 0;
+  z-index: 5;
+  display: flex;
+  gap: 7px;
+  padding: 9px 0;
+  margin-bottom: 8px;
+  background: var(--bg);
+  border-bottom: 1px solid var(--line);
+}
+.arcbar button {
+  flex: 1;
+  font: inherit;
+  font-size: 13px;
+  padding: 7px 4px;
+  border-radius: 20px;
+  border: 1px solid var(--line);
+  background: var(--card);
+  color: var(--text-2);
+  cursor: pointer;
+}
+.arcbar button.on {
+  background: var(--badge-bg);
+  color: var(--badge-fg);
+  border-color: transparent;
+  font-weight: 600;
+}
+
+.arc {
+  border-bottom: 1px solid var(--line);
+  padding: 9px 2px;
+  font-size: 14px;
+  line-height: 1.6;
+}
+.arc .t {
+  font-size: 12px;
+  color: var(--text-3);
+  font-variant-numeric: tabular-nums;
+  margin-right: 7px;
+}
+.arc .lv {
+  font-size: 11px;
+  padding: 1px 6px;
+  border-radius: 4px;
+  background: var(--badge-bg);
+  color: var(--badge-fg);
+  margin-right: 6px;
+}
+.arc .h { color: var(--text); }
+.arc .h.plain { color: var(--text-2); font-size: 13.5px; }
+.arc summary {
+  cursor: pointer;
+  list-style: none;
+  display: flex;
+  align-items: baseline;
+  gap: 0;
+}
+.arc summary::-webkit-details-marker { display: none; }
+.arc summary .h { font-weight: 600; }
+.arc .body {
+  margin: 8px 0 4px 0;
+  padding: 10px 12px;
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 9px;
+}
+.arc .body p {
+  margin: 0 0 10px;
+  font-size: 14px;
+  line-height: 1.8;
+  color: var(--text-2);
+}
+.arc .body p:last-child { margin-bottom: 0; }
